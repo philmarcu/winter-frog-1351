@@ -8,6 +8,7 @@
     Plants-
     <ol><% plot.plants.each do |plant| %>
         <li> <%= plant.name %> </li>
+        <%= button_to "Delete #{plant.name}", "/plot_plants/#{plot.id}/#{plant.id}", method: :delete, local: true %>
     <% end %></ol>
   </div>
 <% end %>
