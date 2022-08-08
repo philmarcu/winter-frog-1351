@@ -115,8 +115,6 @@ RSpec.describe 'plots index page' do
         expect(page).to have_content("Carolina Reaper Pepper")
         expect(page).to have_content("Rudder Red Bell Pepper")
       end
-
-      save_and_open_page
     end
   end
 end
